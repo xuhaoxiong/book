@@ -1,0 +1,20 @@
+取哈希值
+meterpreter > hashdump
+
+1 还原windows SAM文件中的密码哈希值
+2 通过物理访问提取密码哈希值
+3 LM与NTLM算法
+  windows xp 有LM与NTLM
+  windows 7 只有NTLM
+4 LM的局限
+5 John the Ripper
+  john xphashes.txt
+  txt文件是windows xp的密码哈希值
+6 破解Linux密码
+  john linuxpasswords.txt --wordlist=passwordfile.txt
+7 破解配置文件中的密码
+  FileZilla FTP  newuser:wampp
+8 彩虹表
+  Rcrack可以检索彩虹表
+
+  
