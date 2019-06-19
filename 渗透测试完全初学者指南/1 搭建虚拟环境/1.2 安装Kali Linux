@@ -11,4 +11,28 @@
   
   Hyperion  加密软件
   
+  Ettercap
+  nano /etc/ettercap/etter.conf
+  [privs]
+  ec_uid = 0                # nobody is the default 
+  ec_gid = 0                # nobody is the default
+  
+  #---------------
+  #     Linux 
+  #---------------
+
+  # if you use ipchains:
+   #redir_command_on = "ipchains -A input -i %iface -p tcp -s 0/0 -d 0/0 %port -j REDIRECT %rport"
+   #redir_command_off = "ipchains -D input -i %iface -p tcp -s 0/0 -d 0/0 %port -j REDIRECT %rport"
+
+  # if you use iptables:
+   redir_command_on = "iptables -t nat -A PREROUTING -i %iface -p tcp --dport %port -j REDIRECT --to-port %rport"
+   redir_command_off = "iptables -t nat -D PREROUTING -i %iface -p tcp --dport %port -j REDIRECT --to-port %rport"
+
+
+  
+  
+
+  
+  
   
