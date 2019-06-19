@@ -1,0 +1,14 @@
+基本安装，用虚拟机镜象
+1 网络配置
+  桥接   基本用这个
+  NAT   这个安全，能上网
+  主机   无法上网
+  ifconfig
+2 安装Nessus
+3 安装其它软件
+  Ming C 编译器
+  apt-get install mingw32
+  
+  Hyperion  加密软件
+  
+  
