@@ -1,0 +1,14 @@
+1 Nikto
+  nikto -h 192.168.31.12
+  
+2 攻击 XAMPP
+  直接 http://192.168.31.12/phpmyadmin/ 进行管理数据库
+  
+3 WebDav
+  用户名  wampp:xampp
+  使用Cadaver
+  cadaver http://192.168.31.12/webdav
+  
+  
+
+
